@@ -4,9 +4,6 @@ Backend-Integration für einen Wochenkalender, der beliebige
 Home-Assistant-Kalender (Google Calendar, CalDAV, lokale Kalender, ...)
 farblich unterscheidbar zusammenführt.
 
-> Dieses Projekt wurde umbenannt, da der ursprüngliche Name mit einer
-> eingetragenen Marke kollidierte.
-
 Dieses Repository enthält **nur die Python-Integration**. Die passende
 Lovelace-Karte (Frontend) lebt in einem eigenen Repository:
 👉 **[familyboard-planner-card](https://github.com/GoDigitalizeMe/familyboard-planner-card)**
@@ -45,19 +42,6 @@ werden nur beim Start geladen, anders als Frontend-Ressourcen).
 1. Ordner `custom_components/familyboard_planner` nach
    `config/custom_components/familyboard_planner` kopieren.
 2. Home Assistant neu starten.
-
-### Umstieg von einer älteren Version
-
-Der Domain-Name hat sich mit der Umbenennung geändert, das ist technisch
-eine neue Integration:
-
-1. Alte Integration entfernen (Einstellungen → Geräte & Dienste → dort
-   suchen → Löschen). Falls dabei noch ein alter Integrationsordner auf
-   der Platte übrig bleibt (`config/custom_components/`, alles außer
-   `familyboard_planner`), diesen manuell löschen.
-2. Diese Version installieren (s. o.), HA neu starten.
-3. "Familyboard Planner" neu einrichten (Kalender/Farben/Personen).
-4. In der Karte das `entity:` ggf. auf das neue Sensor-Entity anpassen.
 
 ## Einrichtung
 
